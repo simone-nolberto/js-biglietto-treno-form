@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>form Trenitalia</title>
 </head>
+
 <body>
-    <h1>Acquista il tuo biglietto</h1>
-    <input type="text" name="user" id="userID" value="">
-    <input type="number" name="trip" id="userTRIP" value="">
-    <button class="btn">Genera</button>
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="form">
+        <input type="text" name="user" id="userID" value="">
+        <input type="number" name="trip" id="userTRIP" value="">
+        <input type="number" name="age" id="userAGE" value="">
+
+        <!-- <label for="cars">Seleziona la tua fascia di età</label> -->
+        <!-- <select name="age" id="age-range">
+            <option id="minors" value="minors">Minore di 18 anni</option>
+            <option id="adult" value="adult">Tra i 18 ed i 65 anni</option>
+            <option id="senior" value="senior">Oltre i 65 anni</option>
+        </select> -->
+
+        <button class="btn">Genera</button>
+    </div>
+    <h2>IL TUO BIGLIETTO</h2>
+    <div class="final_ticket">
+        <h4>Dettaglio Passeggeri</h4>
+        
+    </div>
+
 
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
