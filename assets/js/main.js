@@ -24,7 +24,8 @@ trigger.addEventListener('click', function () {
     if (age < 18) {
 
         const offer = "ridotto minori";
-        const coach = "5";
+        const coach = Math.floor(Math.random() * 10) + 1;
+        const serial = Math.floor(Math.random() * 10000) + 1;
         let price = km * underAgeDiscount;
         // console.log(euro.format(price));
         // console.log(offer);
@@ -32,14 +33,15 @@ trigger.addEventListener('click', function () {
         document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
-        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("code-detail").innerHTML = serial;
         document.getElementById("price-detail").innerHTML = (euro.format(price));
 
 
     } else if (age >= 65) {
 
         const offer = "ridotto over";
-        const coach = "2";
+        const coach = Math.floor(Math.random() * 10) + 1;
+        const serial = Math.floor(Math.random() * 10000) + 1;
         let price = km * overDiscount;
         // console.log(euro.format(price));
         // console.log(offer);
@@ -47,13 +49,14 @@ trigger.addEventListener('click', function () {
         document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
-        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("code-detail").innerHTML = serial;
         document.getElementById("price-detail").innerHTML = (euro.format(price));
 
     } else {
 
         const offer = "tariffa standard";
-        const coach = "3";
+        const coach = Math.floor(Math.random() * 10) + 1;
+        const serial = Math.floor(Math.random() * 10000) + 1;
         let price = km * mileagePrice;
         // console.log(euro.format(price));
         // console.log(offer);
@@ -61,7 +64,7 @@ trigger.addEventListener('click', function () {
         document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
-        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("code-detail").innerHTML = serial;
         document.getElementById("price-detail").innerHTML = (euro.format(price));
     }
 
