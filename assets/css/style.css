@@ -1,0 +1,28 @@
+body{
+    background-color: palegreen;
+}
+
+.final_ticket{
+    width: 800px;
+    min-height: 150px;
+    border: 1px dashed black;
+    background-color: white;
+    padding: 1rem;
+}
+
+.inner-card{
+    display: flex;
+}
+
+.user{
+    width: fit-content;
+    height: 100px;
+    background-color: gray;
+}
+
+.ticket{
+    width: calc(100% - 162px);
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+}
