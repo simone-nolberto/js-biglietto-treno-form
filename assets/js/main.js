@@ -23,35 +23,47 @@ trigger.addEventListener('click', function () {
 
     if (age < 18) {
 
-        console.log(euro.format(km * underAgeDiscount));
+        const offer = "ridotto minori";
+        const coach = "5";
+        let price = km * underAgeDiscount;
+        // console.log(euro.format(price));
+        // console.log(offer);
+        // console.log(coach);
+        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("offer-detail").innerHTML = offer;
+        document.getElementById("coach-detail").innerHTML = coach;
+        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("price-detail").innerHTML = (euro.format(price));
+
 
     } else if (age >= 65) {
 
-        console.log(euro.format(km * overDiscount));
+        const offer = "ridotto over";
+        const coach = "2";
+        let price = km * overDiscount;
+        // console.log(euro.format(price));
+        // console.log(offer);
+        // console.log(coach);
+        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("offer-detail").innerHTML = offer;
+        document.getElementById("coach-detail").innerHTML = coach;
+        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("price-detail").innerHTML = (euro.format(price));
 
     } else {
-        console.log(euro.format(km * mileagePrice));
+
+        const offer = "tariffa standard";
+        const coach = "3";
+        let price = km * mileagePrice;
+        // console.log(euro.format(price));
+        // console.log(offer);
+        // console.log(coach);
+        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("offer-detail").innerHTML = offer;
+        document.getElementById("coach-detail").innerHTML = coach;
+        document.getElementById("code-detail").innerHTML = Math.random();
+        document.getElementById("price-detail").innerHTML = (euro.format(price));
     }
 
 
 });
-
-
-
-
-// let euro = Intl.NumberFormat('en-DE', {
-//     style: 'currency',
-//     currency: 'EUR',
-// });
-
-
-
-
-
-// if (userAge < 18){
-//     console.log(euro.format(userMileage * underAgeDiscount));
-// } else if (userAge >= 65){
-//     console.log(euro.format(userMileage * overDiscount));
-// } else {
-//     console.log(euro.format(userMileage * mileagePrice));
-// }

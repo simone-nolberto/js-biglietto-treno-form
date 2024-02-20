@@ -1,11 +1,10 @@
 body{
-    background-color: palegreen;
+    background-color: palevioletred;
 }
 
 .final_ticket{
     width: 800px;
     min-height: 150px;
-    border: 1px dashed black;
     background-color: white;
     padding: 1rem;
 }
