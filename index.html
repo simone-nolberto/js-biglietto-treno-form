@@ -9,50 +9,60 @@
 </head>
 
 <body>
-    <h1>Calcola il prezzo del tuo biglietto</h1>
-    <div class="form">
-        <input type="text" name="user" id="userID" value="">
-        <input type="number" name="trip" id="userTRIP" value="">
-        <input type="number" name="age" id="userAGE" value="">
+    <div class="tool">
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <div class="form">
+            <div class="input-block">
+                <input placeholder="Inserisci il tuo nome qui" type="text" name="user" id="userID" value="">
+                <input placeholder="Quanti chilometri vuoi fare oggi?" type="number" name="trip" id="userTRIP" value="">
+                <input placeholder="Inserisci la tua età" type="number" name="age" id="userAGE" value="">
+            </div>
 
-        <!-- <label for="cars">Seleziona la tua fascia di età</label> -->
-        <!-- <select name="age" id="age-range">
+
+            <!-- <label for="cars">Seleziona la tua fascia di età</label> -->
+            <!-- <select name="age" id="age-range">
             <option id="minors" value="minors">Minore di 18 anni</option>
             <option id="adult" value="adult">Tra i 18 ed i 65 anni</option>
             <option id="senior" value="senior">Oltre i 65 anni</option>
         </select> -->
+            <div class="btn-block">
+                <button class="start-btn">Genera</button>
+                <button class="delete-btn">Cancella</button>
+            </div>
 
-        <button class="btn">Genera</button>
-    </div>
-    <h2>IL TUO BIGLIETTO</h2>
-    <div class="final_ticket">
-        <h4>Dettaglio Passeggeri</h4>
-        <div class="inner-card">
-            <div class="user">
-                <h4>NOME PASSEGGERO</h4>
-                <p id="user-detail"></p>
-            </div>
-            <div class="ticket">
-                <div class="offer">
-                    <h5>Offerta</h5>
-                    <p id="offer-detail"></p>
-                </div>
-                <div class="coach">
-                    <h5>Carrozza</h5>
-                    <p id="coach-detail"></p>
-                </div>
-                <div class="cp-code">
-                    <h5>Codice CP</h5>
-                    <p id="code-detail"></p>
-                </div>
-                <div class="finale-price">
-                    <h5>Costo biglietto</h5>
-                    <p id="price-detail"></p>
-                </div>
-            </div>
         </div>
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="final_ticket">
+            <h4>Dettaglio Passeggeri</h4>
+            <div class="inner-card">
+                <div class="user">
+                    <h4>NOME PASSEGGERO</h4>
+                    <p id="user-detail"></p>
+                </div>
+                <div class="ticket">
+                    <div class="offer">
+                        <h5>Offerta</h5>
+                        <p id="offer-detail"></p>
+                    </div>
+                    <div class="coach">
+                        <h5>Carrozza</h5>
+                        <p id="coach-detail"></p>
+                    </div>
+                    <div class="cp-code">
+                        <h5>Codice CP</h5>
+                        <p id="code-detail"></p>
+                    </div>
+                    <div class="finale-price">
+                        <h5>Costo biglietto</h5>
+                        <p id="price-detail"></p>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </div>
+
+
 
 
     <script src="./assets/js/main.js"></script>

@@ -11,7 +11,7 @@ let euro = Intl.NumberFormat('en-DE', {
     currency: 'EUR',
 });
 
-const trigger = document.querySelector(".btn")
+const trigger = document.querySelector(".start-btn")
 trigger.addEventListener('click', function () {
 
     let km = parseInt(userKm.value);
@@ -29,7 +29,7 @@ trigger.addEventListener('click', function () {
         // console.log(euro.format(price));
         // console.log(offer);
         // console.log(coach);
-        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
         document.getElementById("code-detail").innerHTML = Math.random();
@@ -44,7 +44,7 @@ trigger.addEventListener('click', function () {
         // console.log(euro.format(price));
         // console.log(offer);
         // console.log(coach);
-        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
         document.getElementById("code-detail").innerHTML = Math.random();
@@ -58,7 +58,7 @@ trigger.addEventListener('click', function () {
         // console.log(euro.format(price));
         // console.log(offer);
         // console.log(coach);
-        document.getElementById("user-detail").innerHTML = userName;
+        document.getElementById("user-detail").innerHTML = userName.value;
         document.getElementById("offer-detail").innerHTML = offer;
         document.getElementById("coach-detail").innerHTML = coach;
         document.getElementById("code-detail").innerHTML = Math.random();
@@ -67,3 +67,8 @@ trigger.addEventListener('click', function () {
 
 
 });
+
+// const delete = document.querySelector(".delete-btn")
+// delete.addEventListener('click', function (){
+    
+// })

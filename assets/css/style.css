@@ -2,6 +2,27 @@ body{
     background-color: palevioletred;
 }
 
+.tool{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form{
+    background-color: white;
+    width: 800px;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    border-radius: 1rem;
+    
+    & input{
+        border-color: red;
+    }
+}
+
 .final_ticket{
     width: 800px;
     min-height: 150px;
