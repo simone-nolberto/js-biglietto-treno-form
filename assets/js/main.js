@@ -3,8 +3,8 @@ let userKm = document.getElementById("userTRIP");
 let userAge = document.getElementById("userAGE");
 
 const mileagePrice = 0.21;
-const underAgeDiscount = 0.16;
-const overDiscount = 0.12;
+const underAgeDiscount = 0.2;
+const overDiscount = 0.4;
 
 let euro = Intl.NumberFormat('en-DE', {
     style: 'currency',
@@ -26,7 +26,7 @@ trigger.addEventListener('click', function () {
         const offer = "ridotto minori";
         const coach = Math.floor(Math.random() * 10) + 1;
         const serial = Math.floor(Math.random() * 10000) + 1;
-        let price = km * underAgeDiscount;
+        let price = km * (mileagePrice - (mileagePrice *underAgeDiscount));
         // console.log(euro.format(price));
         // console.log(offer);
         // console.log(coach);
@@ -42,7 +42,7 @@ trigger.addEventListener('click', function () {
         const offer = "ridotto over";
         const coach = Math.floor(Math.random() * 10) + 1;
         const serial = Math.floor(Math.random() * 10000) + 1;
-        let price = km * overDiscount;
+        let price = km * (mileagePrice - (mileagePrice * overDiscount));
         // console.log(euro.format(price));
         // console.log(offer);
         // console.log(coach);
